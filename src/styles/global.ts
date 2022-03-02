@@ -46,6 +46,10 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
     }
 
+    span {
+        color: var(--pink-500);
+    }
+
     button {
         font-family: Poppins;
         font-weight: 700;

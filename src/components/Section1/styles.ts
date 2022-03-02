@@ -9,12 +9,39 @@ export const Content = styled.div`
     aling-items: center;
     justify-content: space-between;
 
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 4rem 0 15rem;
 
     gap: 2rem;
+
+    img {
+
+        @media(max-width: 1000px) {
+            margin-top: 3rem;
+        }
+
+        @media(max-width: 600px) {
+            width: 400px;
+        }
+
+        @media(max-width: 375px) {
+            width: 280px;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        text-align: center;
+        display: block;
+        
+    }
+
+    @media(max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 `
 
