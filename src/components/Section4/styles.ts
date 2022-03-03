@@ -9,6 +9,7 @@ export const Content = styled.div`
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    width: 90%;
     
     h1 {
         font-size: 2rem;
@@ -23,6 +24,10 @@ export const BoxGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+
+    @media(max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
 
     div {
         background-color: var(--gray-300);

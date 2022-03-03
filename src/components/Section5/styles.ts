@@ -9,6 +9,7 @@ export const Content = styled.div`
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    width: 90%;
 
     h1 {
         font-size: 2rem;
