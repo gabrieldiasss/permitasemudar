@@ -12,7 +12,11 @@ export const Content = styled.div`
     margin: 0 auto;
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.6rem;
+        
+        @media(max-width: 500px) {
+            font-size: 2rem;
+        }
     }
 
     .price {
@@ -25,6 +29,7 @@ export const Content = styled.div`
         border: 1px solid #000;
         padding: 2rem;
         max-width: 500px;
+        border-radius: 5px;
 
         margin: 2rem auto;
     }

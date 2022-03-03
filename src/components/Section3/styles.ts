@@ -15,10 +15,14 @@ export const Content = styled.div`
     width: 90%;
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.6rem;
         color: #fff;
 
         margin-bottom: 2rem;
+
+        @media(max-width: 500px) {
+            font-size: 2rem;
+        }
     }
 
     div {
