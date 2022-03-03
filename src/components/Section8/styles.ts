@@ -64,11 +64,14 @@ export const DaysWarranty = styled.div`
 `
 
 export const WhoAmI = styled.div`
+
+    margin-top: 2rem;
+
     display: flex;
     align-items: center;
 
     strong {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     p {
@@ -85,8 +88,8 @@ export const WhoAmI = styled.div`
             width: 400px;
         }
 
-        @media(max-width: 375px) {
-            width: 280px;
+        @media(max-width: 430px) {
+            width: 300px;
         }
     }
 
