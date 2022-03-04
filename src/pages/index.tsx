@@ -141,7 +141,8 @@ export const getStaticProps: GetStaticProps = async () => {
         props: {
             elementsSection1, elementsSection2, elementsSection4, elementsSection5, elementsSection6, elementsSection7, elementsSection8
         },
-        revalidate: 8
+
+        revalidate: 3600000
 
     }
 }
