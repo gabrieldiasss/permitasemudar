@@ -46,7 +46,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
     }
 
-    span {
+    strong {
         color: var(--pink-500);
     }
 

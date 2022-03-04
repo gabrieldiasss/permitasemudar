@@ -1,29 +1,29 @@
+import { ElementsSection4 } from '../../types'
 import { Container, Content, BoxGrid } from './styles'
 
-export default function Section4() {
+interface ElementsSectionProps {
+    data: ElementsSection4[]
+}
+
+export default function Section4({ data }: ElementsSectionProps) {
 
     return (
         <Container>
             <Content>
-                <h1>O QUE VOCÊ VAI APRENDER NO<span> PROGRAMA PERMITA-SE</span></h1>
+                {data.map((value, key) => (
+                    <div key={key} >
+                        <div dangerouslySetInnerHTML={{ __html: value.title }} />
 
-                <BoxGrid>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex velit consequuntur architecto quasi, culpa aperiam odio repellat asperiores officiis enim natus deserunt expedita facilis. Sunt id corrupti numquam ab laudantium.
-                    </div>
+                        <BoxGrid>
+                            {value.group.map((v, key) => (
+                                <div key={key}>
+                                    {v.box_section_4}
+                                </div>
+                            ))}
+                        </ BoxGrid>
 
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex velit consequuntur architecto quasi, culpa aperiam odio repellat asperiores officiis enim natus deserunt expedita facilis. Sunt id corrupti numquam ab laudantium.
                     </div>
-
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex velit consequuntur architecto quasi, culpa aperiam odio repellat asperiores officiis enim natus deserunt expedita facilis. Sunt id corrupti numquam ab laudantium.
-                    </div>
-
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex velit consequuntur architecto quasi, culpa aperiam odio repellat asperiores officiis enim natus deserunt expedita facilis. Sunt id corrupti numquam ab laudantium.
-                    </div>
-                </BoxGrid>
+                ))}
 
             </Content>
         </Container>

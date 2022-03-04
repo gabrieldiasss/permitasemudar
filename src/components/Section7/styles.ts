@@ -21,7 +21,7 @@ export const Content = styled.div`
 
     .price {
 
-        strong {
+        .small {
             font-size: 4rem;
         }
 

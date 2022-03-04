@@ -17,6 +17,10 @@ export const Content = styled.div`
         margin-top: 2rem;
     }
 
+    p {
+        margin-top: 1rem;
+    }
+
 `
 
 export const DaysWarranty = styled.div`
@@ -70,7 +74,7 @@ export const WhoAmI = styled.div`
     display: flex;
     align-items: center;
 
-    strong {
+    b {
         font-size: 3rem;
     }
 

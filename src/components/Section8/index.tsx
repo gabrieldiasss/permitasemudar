@@ -1,45 +1,50 @@
+import { ElementsSection8 } from '../../types'
 import { Container, Content, DaysWarranty, WhoAmI } from './styles'
 
-export default function Section8() {
+interface ElementsProps {
+    data: ElementsSection8[];
+}
+
+export default function Section8({ data }: ElementsProps) {
 
     return (
         <Container>
-            <Content>
+            {data.map((value, key) => (
+                <Content key={key} >
 
-                <DaysWarranty>
-                    <div>
-                        <h1>Experimente todo o conteúdo por 7 dias gratuitamente</h1>
+                    <DaysWarranty>
+                        <div>
+                            <h1>{value.title}</h1>
 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime soluta, error quam mollitia accusantium, ea, voluptate debitis architecto repellendus quo maiores optio aliquam aliquid incidunt non quas blanditiis molestiae ab.</p>
-                    </div>
+                            <div dangerouslySetInnerHTML={{ __html: value.subtitle_2 }} />
+                        </div>
 
-                    <img src="images/EBOOK.png" alt="" />
+                        <img src="images/EBOOK.png" alt="" />
 
-                </DaysWarranty>
+                    </DaysWarranty>
 
-                <button type="button">EU VOU ATINGIR MEUS OBJETIVOS!</button>
+                    <a href={value.link_button} >  
+                        <button type="button">EU VOU ATINGIR MEUS OBJETIVOS!</button>
+                    </a>
+                   
 
-                <WhoAmI>
+                    <WhoAmI>
 
-                    <div>
-                        <img src="images/Foto silvana.png" alt="" />
-                    </div>
+                        <div>
+                            <img src="images/Foto silvana.png" alt="" />
+                        </div>
 
-                    <div>
-                        <strong>Muito prazer...</strong>
+                        <div>
+                            <b>{value.title_2}</b>
 
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem possimus, fugiat officiis nobis libero animi. At obcaecati ullam praesentium nisi ipsam enim magni excepturi quidem dignissimos, nobis error assumenda. Dolorem.
+                           <div dangerouslySetInnerHTML={{ __html: value.text_2 }} />
+                        </div>
 
-                            <br />
+                    </WhoAmI>
 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse asperiores beatae, et minima impedit animi magni atque error exercitationem officiis cupiditate minus recusandae, fuga voluptatem voluptates voluptate velit nihil.
-                        </p>
-                    </div>
+                </Content>
+            ))}
 
-                </WhoAmI>
-
-            </Content>
         </Container>
     )
 }

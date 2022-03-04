@@ -16,22 +16,21 @@ export const Content = styled.div`
         font-size: 1.6rem;
     }
 
-    div {
+    .video-area {
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
-
-        margin-top: 1rem;
     }
 
     h1 {
         margin: 3rem;
 
         font-size: 2.2rem;
-    
     }
 
     p {
         font-size: 1.8rem;
+        margin-top: 2rem;
     }
 
 `

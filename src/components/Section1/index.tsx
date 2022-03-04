@@ -1,20 +1,34 @@
+import { ElementsSection1 } from '../../types'
 import { Container, Content, Texts } from './styles'
 
-export default function Section1() {
+interface ElementsSectionProps {
+    data: ElementsSection1[]
+}
+
+export default function Section1({ data }: ElementsSectionProps) {
 
     return (
         <Container>
             <Content>
-                <Texts>
-                    <h1>Assuma o controle da sua vida, seja uma mulher de sucesso e viva a vida que você merece!</h1>
+                {data.map((value, key) => (
+                    <Texts key={key} >
+                        <h1>{value.title}</h1>
 
-                    <p>O passo a passo definitivo para você parar de tentar e finalmente atingir os seus objetivos</p>
+                        <p>{value.subtitle}</p>
 
-                    <button type="button">EU QUERO MUDAR</button>
-                </Texts>
+                        <a href={value.link_button} >
+                            <button type="button">EU QUERO MUDAR</button>
+                        </a>
 
-                <img src="/images/EBOOK.png" alt="" />
+                    </Texts>
+                ))}
+
+                <div>
+                    <img src="/images/EBOOK.png" alt="" />
+                </div>
+
             </Content>
         </Container>
     )
 }
+

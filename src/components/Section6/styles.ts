@@ -36,11 +36,12 @@ export const Content = styled.div`
         @media(max-width: 425px) {
             width: 250px;
         }
+
+        margin: 2rem;
     }
 
     strong {
-        font-size: 2rem;
-        margin-top: 2rem;
+        color: #fff;
     }
 
     p {

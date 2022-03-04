@@ -16,6 +16,18 @@ export const Content = styled.div`
 
     gap: 2rem;
 
+    @media(max-width: 1000px) {
+        text-align: center;
+
+        display: flex;
+    }
+
+    @media(max-width: 800px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     img {
 
         @media(max-width: 1000px) {
@@ -31,17 +43,8 @@ export const Content = styled.div`
         }
     }
 
-    @media(max-width: 1000px) {
-        text-align: center;
-        display: block;
-        
-    }
+    
 
-    @media(max-width: 800px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
 `
 
@@ -82,5 +85,7 @@ export const Texts = styled.div`
         margin-top: 1.2rem;
         font-size: 1.6rem;
     }
+
+    
     
 `
