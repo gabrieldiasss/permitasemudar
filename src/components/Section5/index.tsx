@@ -18,9 +18,10 @@ export default function Section5({ data }: ElementsSectionProps) {
                         <p>{value.subtitle}</p>
 
                         <BoxGrid>
-                            {value.group.map((v, key) => (
+                            {value.group.map((v: any, key) => (
                                 <div key={key} >
                                     <b>{v.title_box_section_5[0].text}</b>
+                                    
                                     <br />
                                     {v.text_box_section_5[0].text}
                                 </div>
