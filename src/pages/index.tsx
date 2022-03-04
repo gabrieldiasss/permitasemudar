@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const prismic = getPrismicClient()
 
     const response = await prismic.query<any>([
-        Prismic.predicates.at('document.type', 'content')
+        Prismic.Predicates.at('document.type', 'content')
     ], {
         fetch: ['content.title_section_1', 'content.text_section_1', 'content.link_button_section_1', 'content.link_youtube', 'content.title_section_2', 'content.text_section_2', 'content.title_section_4', 'content.group_section_4', 'content.title_section_5', 'content.text_section_5', 'content.group_section_5', 'content.title_section_6', 'content.text_section_6', 'content.title_section_7', 'content.lowest_price', 'content.price_total', 'content.link_button_section_7', 'content.title_1_section_8', 'content.text_1_section_8', 'content.link_button_section_8',
         'content.title_2_section_8', 'content.text_2_section_8'],
