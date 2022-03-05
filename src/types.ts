@@ -10,6 +10,12 @@ export interface ElementsSection2 {
     text: string;
 }
 
+export interface ElementsSection3 {
+    link_youtube: string;
+    title: string;
+    text: string;
+}
+
 interface GroupSection4 {
     box_section_4: string;
 }

@@ -46,9 +46,6 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
     }
 
-    strong {
-        color: var(--pink-500);
-    }
 
     button {
         font-family: Poppins;

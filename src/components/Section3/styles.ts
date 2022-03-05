@@ -14,6 +14,10 @@ export const Content = styled.div`
     margin: 0 auto;
     width: 90%;
 
+    strong {
+        color: #fff;
+    }
+
     h1 {
         font-size: 2.6rem;
         color: #fff;
@@ -25,15 +29,13 @@ export const Content = styled.div`
         }
     }
 
-    div {
-        border: 1px solid #fff;
-        border-radius: 5px;
-        padding: 10px;
-    }
-
     p {
         color: #fff;
         font-size: 1.6rem;
+
+        & + p {
+            margin-top: 2rem;
+        }
     }
 
     button {

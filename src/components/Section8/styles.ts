@@ -8,13 +8,22 @@ export const Container = styled.section`
 export const Content = styled.div`
 
     color: #fff;
-
+    
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 
+
     button {
-        margin-top: 2rem;
+
+        display: flex;
+        justify-content: center;
+        
+        
+        @media(max-width: 1000px) {
+
+            margin: 2rem auto;
+        }
     }
 
     p {
@@ -56,8 +65,6 @@ export const DaysWarranty = styled.div`
             width: 280px;
         }
     }
-
-    
 
     @media(max-width: 1000px) {
         text-align: center;

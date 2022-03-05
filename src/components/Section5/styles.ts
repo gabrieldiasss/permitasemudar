@@ -17,6 +17,10 @@ export const Content = styled.div`
         @media(max-width: 500px) {
             font-size: 2rem;
         }
+
+        strong {
+        color: var(--pink-500);
+    }
     }
 
     p {

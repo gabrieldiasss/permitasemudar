@@ -17,7 +17,7 @@ export default function Section2({ data }: ElementsSectionProps) {
                 {data.map((value, key) => (
                     <div key={key}>
                         <div className='video-area' >
-                            <ReactPlayer className="video" url={value.link_youtube} controls />
+                            <ReactPlayer width="100%" height="100%" className="video" url={value.link_youtube} controls />
                         </div>
 
                         <div dangerouslySetInnerHTML={{ __html: value.title }} />
