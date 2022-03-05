@@ -21,7 +21,6 @@ export const Content = styled.div`
         
         
         @media(max-width: 1000px) {
-
             margin: 2rem auto;
         }
     }
@@ -36,7 +35,7 @@ export const DaysWarranty = styled.div`
     display: flex;
     align-items: center;
 
-    gap: 1rem;
+    gap: 3rem;
 
     h1 {
         font-size: 3rem;

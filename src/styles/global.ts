@@ -67,7 +67,5 @@ export const GlobalStyle = createGlobalStyle`
         text-transform: none;
     }
 
-    a:hover {
-        text-decoration: underline;
-    }
+    
 `

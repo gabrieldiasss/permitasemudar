@@ -11,7 +11,7 @@ export interface ElementsSection2 {
 }
 
 export interface ElementsSection3 {
-    link_youtube: string;
+    link_button: string;
     title: string;
     text: string;
 }

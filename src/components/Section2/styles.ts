@@ -21,11 +21,15 @@ export const Content = styled.div`
         display: flex;
         justify-content: center;
         
-        max-width: 640px;
-        height: 360px;
+        
+        height: 400px;
 
         @media(max-width: 425px) {
-            height: 200px;
+            height: 210px;
+        }
+
+        @media(max-width: 375px) {
+            height: 190px;
         }
     }
 

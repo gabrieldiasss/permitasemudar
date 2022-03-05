@@ -15,7 +15,10 @@ export default function Section3({ data }: ElementsSectionProps) {
 
                     <div dangerouslySetInnerHTML={{ __html: value.text }} />
 
-                    <button type='button'>EU ME PERMITO MUDAR</button>
+                    <a href={value.link_button} >
+                        <button type='button'>EU ME PERMITO MUDAR</button>
+                    </a>
+                    
                 </Content>
             ))}
 

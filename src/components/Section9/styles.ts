@@ -11,4 +11,8 @@ export const Footer = styled.footer`
         font-size: 2rem;
         font-weight: 600;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 `
