@@ -2,17 +2,33 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     background-image: url('images/img-section1.png');
+
+    .video-area {
+        padding-top: 2rem;
+        height: 400px;
+        max-width: 650px;
+        width: 90%;
+        margin: 0 auto;
+
+        @media(max-width: 425px) {
+            height: 250px;
+        }
+
+        @media(max-width: 375px) {
+            height: 230px;
+        }
+    }
 `
 
 export const Content = styled.div`
     display: flex;
-    aling-items: center;
+    align-items: center;
     justify-content: space-between;
 
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 0 15rem;
+    padding: 4rem 0 5rem;
 
     gap: 2rem;
 
@@ -24,7 +40,7 @@ export const Content = styled.div`
 
     @media(max-width: 800px) {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -43,9 +59,6 @@ export const Content = styled.div`
         }
     }
 
-    
-
-
 `
 
 export const Texts = styled.div`
@@ -55,8 +68,6 @@ export const Texts = styled.div`
         font-size: 3rem;
         
         color: #fff;
-
-        margin-top: 2rem;
 
         @media(max-width: 500px) {
             font-size: 2rem;
@@ -86,6 +97,19 @@ export const Texts = styled.div`
         font-size: 1.6rem;
     }
 
-    
+`
+
+export const Video = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1;
+
+    text-align: center;
+
+    max-width: 800px;
+    margin: 0 auto;
+
     
 `

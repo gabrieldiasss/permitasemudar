@@ -75,13 +75,13 @@ export const getStaticProps: GetStaticProps = async () => {
             title: RichText.asText(value.data.title_section_1),
             subtitle: RichText.asText(value.data.text_section_1),
             link_button: Link.url(value.data.link_button_section_1),
+            link_youtube: RichText.asText(value.data.link_youtube),
         }
     })
 
     const elementsSection2 = response.results.map(value => {
 
         return {
-            link_youtube: Link.url(value.data.link_youtube),
             title: RichText.asHtml(value.data.title_section_2),
             text: RichText.asHtml(value.data.text_section_2),
         }

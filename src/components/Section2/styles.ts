@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-    margin-top: -10rem;
+    
 `
 
 export const Content = styled.div`
@@ -16,22 +16,7 @@ export const Content = styled.div`
         font-size: 1.6rem;
     }
 
-    .video-area {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        
-        
-        height: 400px;
-
-        @media(max-width: 425px) {
-            height: 210px;
-        }
-
-        @media(max-width: 375px) {
-            height: 190px;
-        }
-    }
+  
 
     h1 {
         margin-top: 2rem;

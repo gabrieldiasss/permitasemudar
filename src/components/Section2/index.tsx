@@ -7,10 +7,7 @@ interface ElementsSectionProps {
     data: ElementsSection2[]
 }
 
-
-
 export default function Section2({ data }: ElementsSectionProps) {
-
 
     return (
         <Container>
@@ -19,7 +16,7 @@ export default function Section2({ data }: ElementsSectionProps) {
 
                 {data.map((value, key) => (
                     <div key={key}>
-                        <div className='video-area' >
+                        {/* <div className='video-area' >
                             <ReactPlayer width="100%" height="100%" url="http://www.youtube.com/embed/gLEYYR3V5GQ?autoplay=1&origin=http://localhost:3000"
                                 config={{
                                     youtube: {
@@ -34,7 +31,7 @@ export default function Section2({ data }: ElementsSectionProps) {
                                 }}
                                 controls
                             />
-                        </div>
+                        </div> */}
 
                         <div dangerouslySetInnerHTML={{ __html: value.title }} />
 

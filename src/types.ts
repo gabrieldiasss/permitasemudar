@@ -2,10 +2,11 @@ export interface ElementsSection1 {
     title: string;
     subtitle: string;
     link_button: string;
+    link_youtube: string;
 }
 
 export interface ElementsSection2 {
-    link_youtube: string;
+    
     title: string;
     text: string;
 }
