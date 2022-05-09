@@ -12,7 +12,7 @@ export default function Section1({ data }: ElementsSectionProps) {
         <Container>
 
             {data.map((value, key) => (
-                <div className='video-area' key={key} >
+                <div className='video-area-desktop' key={key} >
                     <ReactPlayer width="100%" height="100%" url={`http://www.youtube.com/embed/${value.link_youtube}?autoplay=1&origin=http://localhost:3000`}
                         config={{
                             youtube: {
@@ -39,9 +39,29 @@ export default function Section1({ data }: ElementsSectionProps) {
 
                         <p>{value.subtitle}</p>
 
-                        <a href={value.link_button} >
+                        {data.map((value, key) => (
+                            <div className='video-area-mobile' key={key} >
+                                <ReactPlayer width="100%" height="100%" url={`http://www.youtube.com/embed/${value.link_youtube}?autoplay=1&origin=http://localhost:3000`}
+                                    config={{
+                                        youtube: {
+                                            playerVars: {
+                                                'autoplay': 1,
+                                                'controls': 0,
+                                                'autohide': 1,
+                                                'wmode': 'opaque',
+                                                'origin': 'http://localhost:3000'
+                                            }
+                                        }
+                                    }}
+                                    controls
+                                />
+
+                            </div>
+                        ))}
+
+                        {/* <a href={value.link_button} >
                             <button type="button">EU QUERO MUDAR</button>
-                        </a>
+                        </a> */}
 
                     </Texts>
                 ))}

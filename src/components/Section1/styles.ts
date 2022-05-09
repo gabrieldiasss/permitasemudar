@@ -3,12 +3,36 @@ import styled from 'styled-components'
 export const Container = styled.section`
     background-image: url('images/img-section1.png');
 
-    .video-area {
+    .video-area-desktop {
         padding-top: 2rem;
         height: 400px;
         max-width: 650px;
         width: 90%;
         margin: 0 auto;
+
+        @media(max-width: 1000px) {
+            display: none;
+        }
+
+        @media(max-width: 425px) {
+            height: 250px;
+        }
+
+        @media(max-width: 375px) {
+            height: 230px;
+        }
+    }
+
+    .video-area-mobile {
+        padding-top: 2rem;
+        height: 400px;
+        max-width: 650px;
+        width: 90%;
+        margin: 0 auto;
+
+        @media(min-width: 1000px) {
+            display: none;
+        }
 
         @media(max-width: 425px) {
             height: 250px;
