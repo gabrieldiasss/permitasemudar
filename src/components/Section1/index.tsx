@@ -11,25 +11,7 @@ export default function Section1({ data }: ElementsSectionProps) {
     return (
         <Container>
 
-            {data.map((value, key) => (
-                <div className='video-area-desktop' key={key} >
-                    <ReactPlayer width="100%" height="100%" url={`http://www.youtube.com/embed/${value.link_youtube}?autoplay=1&origin=http://localhost:3000`}
-                        config={{
-                            youtube: {
-                                playerVars: {
-                                    'autoplay': 1,
-                                    'controls': 0,
-                                    'autohide': 1,
-                                    'wmode': 'opaque',
-                                    'origin': 'http://localhost:3000'
-                                }
-                            }
-                        }}
-                        controls
-                    />
 
-                </div>
-            ))}
 
             <Content>
 
@@ -66,7 +48,7 @@ export default function Section1({ data }: ElementsSectionProps) {
                     </Texts>
                 ))}
 
-
+                
 
                 <div>
                     <img src="/images/EBOOK.png" alt="" />
@@ -75,6 +57,26 @@ export default function Section1({ data }: ElementsSectionProps) {
             </Content>
 
             <Video>
+
+            {data.map((value, key) => (
+                    <div className='video-area-desktop' key={key} >
+                        <ReactPlayer width="100%" height="100%" url={`http://www.youtube.com/embed/${value.link_youtube}?autoplay=1&origin=http://localhost:3000`}
+                            config={{
+                                youtube: {
+                                    playerVars: {
+                                        'autoplay': 1,
+                                        'controls': 0,
+                                        'autohide': 1,
+                                        'wmode': 'opaque',
+                                        'origin': 'http://localhost:3000'
+                                    }
+                                }
+                            }}
+                            controls
+                        />
+
+                    </div>
+                ))}
 
             </Video>
 

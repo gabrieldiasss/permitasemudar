@@ -52,7 +52,7 @@ export const Content = styled.div`
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 0 5rem;
+    padding: 4rem 0 1rem;
 
     gap: 2rem;
 
@@ -135,5 +135,5 @@ export const Video = styled.div`
     max-width: 800px;
     margin: 0 auto;
 
-    
+    padding-bottom: 2rem;
 `
